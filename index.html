@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Geosciences Lab - Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .logo {
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Insert logo image here -->
+            <img src="dg.png" alt="Digital Geosciences Lab Logo" width="200">
+        </div>
+        <h1>Digital Geosciences Lab</h1>
+        <p>Open, project-based research at the intersection of geoscience, AI, and sustainable development.</p>
+        <p><strong>Coming Soon!</strong> Stay tuned for exciting updates!</p>
+        <button class="button" id="copyButton">info@digitalgeosciences.com</button>
+    </div>
+
+    <script>
+        // Function to copy email to clipboard
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const email = 'info@digitalgeosciences.com';
+            navigator.clipboard.writeText(email).then(function() {
+                alert('Email copied to clipboard!');
+            }, function() {
+                alert('Failed to copy email.');
+            });
+        });
+    </script>
+</body>
+</html>
